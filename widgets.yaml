@@ -26,7 +26,6 @@
     refresh: 3000
 
 - datetime:
-    label: AKL
     text_size: xl
     locale: en-NZ
     format:
@@ -34,7 +33,6 @@
       timeStyle: short
       hourCycle: h23
 - datetime:
-    label: TOR
     text_size: xl
     locale: en-CA
     format:
@@ -42,7 +40,6 @@
       timeStyle: short
       hourCycle: h23
 - datetime:
-    label: SYD
     text_size: xl
     locale: en-AU
     format:
@@ -50,7 +47,6 @@
       timeStyle: short
       hourCycle: h23
 - datetime:
-    label: UTC
     text_size: xl
     format:
       timeZone: UTC

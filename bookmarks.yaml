@@ -1,0 +1,18 @@
+- Resources:
+    - unRAID Forums:
+        - icon: unraid.png
+          href: https://forums.unraid.net/
+    - Trash Guides:
+        - icon: https://trash-guides.info/img/logo.png
+          href: https://trash-guides.info/
+    - Homepage Docs:
+        - icon: homepage.png
+          href: https://gethomepage.dev/
+
+- Tools:
+    - Cloudflare:
+        - icon: cloudflare.png
+          href: https://dash.cloudflare.com/
+    - GitHub:
+        - icon: github-light.png
+          href: https://github.com/

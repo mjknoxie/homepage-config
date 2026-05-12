@@ -1,0 +1,149 @@
+- Media:
+    - Jellyfin:
+        href: https://jellyfin.46n2.site
+        icon: jellyfin.png
+        description: Media Server
+        server: local
+        container: jellyfin
+        widget:
+          type: jellyfin
+          url: http://jellyfin:8096
+          key: "{{HOMEPAGE_VAR_JELLYFIN_KEY}}"
+          enableNowPlaying: true
+
+    - Unmanic:
+        href: https://unmanic.46n2.site
+        icon: unmanic.png
+        description: Library Optimizer
+        server: local
+        container: unmanic
+
+    - Seerr:
+        href: https://seerr.46n2.site
+        icon: overseerr.png
+        description: Media Requests
+        server: local
+        container: seerr
+        widget:
+          type: overseerr
+          url: http://seerr:5055
+          key: "{{HOMEPAGE_VAR_SEERR_KEY}}"
+
+- Downloads:
+    - SABnzbd:
+        href: https://sabnzbd.46n2.site
+        icon: sabnzbd.png
+        description: Usenet Client
+        server: local
+        container: sabnzbd
+        widget:
+          type: sabnzbd
+          url: http://sabnzbd:8080
+          key: "{{HOMEPAGE_VAR_SABNZBD_KEY}}"
+
+    - qBittorrent:
+        href: https://qbit.46n2.site
+        icon: qbittorrent.png
+        description: Torrent Client (via Gluetun VPN)
+        server: local
+        container: gluetun
+        widget:
+          type: qbittorrent
+          url: http://gluetun:8080
+          username: "{{HOMEPAGE_VAR_QBIT_USER}}"
+          password: "{{HOMEPAGE_VAR_QBIT_PASS}}"
+
+- Automation:
+    - Sonarr:
+        href: https://sonarr.46n2.site
+        icon: sonarr.png
+        description: TV Shows
+        server: local
+        container: sonarr
+        widget:
+          type: sonarr
+          url: http://sonarr:8989
+          key: "{{HOMEPAGE_VAR_SONARR_KEY}}"
+
+    - Radarr:
+        href: https://radarr.46n2.site
+        icon: radarr.png
+        description: Movies
+        server: local
+        container: radarr
+        widget:
+          type: radarr
+          url: http://radarr:7878
+          key: "{{HOMEPAGE_VAR_RADARR_KEY}}"
+
+    - Prowlarr:
+        href: https://prowlarr.46n2.site
+        icon: prowlarr.png
+        description: Indexer Manager
+        server: local
+        container: prowlarr
+        widget:
+          type: prowlarr
+          url: http://prowlarr:9696
+          key: "{{HOMEPAGE_VAR_PROWLARR_KEY}}"
+
+- Documents:
+    - Paperless-ngx:
+        href: https://paperless.46n2.site
+        icon: paperless-ngx.png
+        description: Document Management
+        server: local
+        container: paperless-ngx
+        widget:
+          type: paperlessngx
+          url: http://paperless-ngx:8000
+          key: "{{HOMEPAGE_VAR_PAPERLESS_KEY}}"
+
+    - BentoPDF:
+        href: https://pdf.46n2.site
+        icon: bentopdf.png
+        description: PDF Tools
+        server: local
+        container: bentopdf
+
+- Network:
+    - Pi-hole:
+        href: https://pihole.46n2.site
+        icon: pi-hole.png
+        description: DNS & Ad Blocking
+        server: local
+        container: pihole
+        widget:
+          type: pihole
+          version: 6
+          url: http://192.168.1.14:8155
+          key: "{{HOMEPAGE_VAR_PIHOLE_KEY}}"
+
+    - Cloudflare Tunnel:
+        href: https://dash.cloudflare.com/
+        icon: cloudflare.png
+        description: Secure Tunnel
+        server: local
+        container: cloudflared
+
+- Infrastructure:
+    - unRAID:
+        href: https://stimpy.46n2.site
+        icon: unraid.png
+        description: Server Dashboard
+
+    - Portainer:
+        href: https://portainer.46n2.site
+        icon: portainer.png
+        description: Container Management
+        widget:
+          type: portainer
+          url: http://192.168.1.14:9000
+          env: 3
+          key: "{{HOMEPAGE_VAR_PORTAINER_KEY}}"
+
+    - Gluetun:
+        icon: gluetun.png
+        description: VPN Gateway
+        server: local
+        container: gluetun

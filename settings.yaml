@@ -1,0 +1,53 @@
+title: Stimpy's Dashboard
+
+theme: dark
+color: slate
+
+headerStyle: boxed
+iconStyle: theme
+
+cardBlur: md
+
+# Background image — place your image in /app/public/images/ on the container
+# Find good ones at https://unsplash.com or https://wallhaven.cc
+background:
+  image: https://images.unsplash.com/photo-1502790671504-542ad42d5189?auto=format&fit=crop&w=2560&q=80
+  blur: sm
+  brightness: 50
+  opacity: 50
+  saturate: 100
+
+layout:
+  Media:
+    style: row
+    columns: 4
+    icon: mdi-filmstrip-#e5a00d
+  Downloads:
+    style: row
+    columns: 4
+    icon: mdi-download-circle-#56b4e9
+  Automation:
+    style: row
+    columns: 4
+    icon: mdi-robot-#d55e00
+  Documents:
+    style: row
+    columns: 4
+    icon: mdi-file-document-#009e73
+  Network:
+    style: row
+    columns: 4
+    icon: mdi-lan-#cc79a7
+  Infrastructure:
+    style: row
+    columns: 4
+    icon: mdi-server-#0072b2
+
+target: _blank
+
+quicklaunch:
+  searchDescriptions: true
+  showSearchSuggestions: true
+
+statusStyle: dot
+showStats: true

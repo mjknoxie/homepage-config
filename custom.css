@@ -1,0 +1,88 @@
+/* === unRAID Homepage Custom Styles === */
+
+/* Smoother card hover effect */
+.service {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.service:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Glassmorphism boost on cards */
+.service,
+.information-widget-resource,
+.bookmark {
+  backdrop-filter: blur(12px) saturate(150%);
+  -webkit-backdrop-filter: blur(12px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Subtle glow on service icons */
+.service img {
+  transition: filter 0.2s ease;
+}
+.service:hover img {
+  filter: drop-shadow(0 0 6px rgba(148, 163, 184, 0.4));
+}
+
+/* Section headers — cleaner spacing */
+.services-group h2 {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+
+/* Widget bar subtle separator */
+.information-widgets {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Greeting text style */
+.information-widget-greeting span {
+  font-weight: 300;
+}
+
+/* Search bar refinement */
+.information-widget-search input {
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 8px !important;
+  transition: border-color 0.2s ease;
+}
+.information-widget-search input:focus {
+  border-color: rgba(148, 163, 184, 0.3) !important;
+  box-shadow: 0 0 12px rgba(148, 163, 184, 0.1) !important;
+}
+
+/* Status dots — slightly larger and brighter */
+.status-dot {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
+
+/* Bookmark hover */
+.bookmark {
+  transition: transform 0.2s ease;
+}
+.bookmark:hover {
+  transform: translateY(-1px);
+}

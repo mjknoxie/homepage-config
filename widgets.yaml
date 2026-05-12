@@ -1,0 +1,26 @@
+- greeting:
+    text_size: xl
+    text: Welcome to unRAID
+
+- datetime:
+    text_size: xl
+    format:
+      dateStyle: long
+      timeStyle: short
+      hourCycle: h12
+
+- search:
+    provider: google
+    target: _blank
+
+- resources:
+    cpu: true
+    memory: true
+    cputemp: true
+    uptime: true
+    refresh: 3000
+
+- resources:
+    label: Root
+    disk: /
+    refresh: 3000

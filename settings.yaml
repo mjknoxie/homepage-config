@@ -18,10 +18,6 @@ background:
   saturate: 100
 
 layout:
-  Time:
-    style: row
-    columns: 4
-    icon: mdi-clock-outline-#94a3b8
   Media:
     style: row
     columns: 4

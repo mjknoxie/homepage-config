@@ -1,4 +1,31 @@
 - Media:
+    - Time:
+        - Auckland:
+            widget:
+              type: datetime
+              text_size: xl
+              locale: en-NZ
+              format:
+                timeZone: Pacific/Auckland
+                timeStyle: short
+                hourCycle: h23
+        - Toronto:
+            widget:
+              type: datetime
+              text_size: xl
+              locale: en-CA
+              format:
+                timeZone: America/Toronto
+                timeStyle: short
+                hourCycle: h23
+        - UTC:
+            widget:
+              type: datetime
+              text_size: xl
+              format:
+                timeZone: UTC
+                timeStyle: short
+                hourCycle: h23
     - Jellyfin:
         href: https://jellyfin.46n2.site
         icon: jellyfin.png

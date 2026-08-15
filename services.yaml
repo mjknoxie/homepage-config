@@ -18,6 +18,13 @@
         server: local
         container: unmanic
 
+    - Youtarr:
+        href: https://youtarr.46n2.site
+        icon: youtarr.png
+        description: YouTube Archiver
+        server: local
+        container: youtarr
+
     - Seerr:
         href: https://seerr.46n2.site
         icon: overseerr.png
@@ -99,12 +106,12 @@
           url: http://paperless-ngx:8000
           key: "{{HOMEPAGE_VAR_PAPERLESS_KEY}}"
 
-    - BentoPDF:
-        href: https://pdf.46n2.site
-        icon: bentopdf.png
-        description: PDF Tools
+    - OpenCloud:
+        href: https://drive.46n2.site
+        icon: open-cloud.png
+        description: File Sync & Share
         server: local
-        container: bentopdf
+        container: opencloud
 
 - Network:
     - Pi-hole:

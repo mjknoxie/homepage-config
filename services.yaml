@@ -11,6 +11,18 @@
           key: "{{HOMEPAGE_VAR_JELLYFIN_KEY}}"
           enableNowPlaying: true
 
+    - Navidrome:
+        href: https://navidrome.46n2.site
+        icon: navidrome.png
+        description: Music Streaming
+        server: local
+        container: navidrome
+        widget:
+          type: navidrome
+          url: http://navidrome:4533
+          user: "{{HOMEPAGE_VAR_NAVIDROME_USER}}"
+          password: "{{HOMEPAGE_VAR_NAVIDROME_PASS}}"
+
     - Unmanic:
         href: https://unmanic.46n2.site
         icon: unmanic.png
@@ -82,6 +94,17 @@
           type: radarr
           url: http://radarr:7878
           key: "{{HOMEPAGE_VAR_RADARR_KEY}}"
+
+    - Lidarr:
+        href: https://lidarr.46n2.site
+        icon: lidarr.png
+        description: Music
+        server: local
+        container: lidarr
+        widget:
+          type: lidarr
+          url: http://lidarr:8686
+          key: "{{HOMEPAGE_VAR_LIDARR_KEY}}"
 
     - Prowlarr:
         href: https://prowlarr.46n2.site

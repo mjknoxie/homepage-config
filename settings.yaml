@@ -20,7 +20,7 @@ background:
 layout:
   Media:
     style: row
-    columns: 4
+    columns: 5
     icon: mdi-filmstrip-#e5a00d
   Downloads:
     style: row

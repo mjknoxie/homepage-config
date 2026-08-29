@@ -21,7 +21,9 @@
           type: navidrome
           url: http://navidrome:4533
           user: "{{HOMEPAGE_VAR_NAVIDROME_USER}}"
-          password: "{{HOMEPAGE_VAR_NAVIDROME_PASS}}"
+          # Subsonic auth: token is md5(password + salt), not the password itself
+          token: "{{HOMEPAGE_VAR_NAVIDROME_TOKEN}}"
+          salt: "{{HOMEPAGE_VAR_NAVIDROME_SALT}}"
 
     - Unmanic:
         href: https://unmanic.46n2.site

@@ -138,6 +138,13 @@
         server: local
         container: opencloud
 
+    - Outline:
+        href: https://outline.46n2.site
+        icon: outline.png
+        description: Wiki & Knowledge Base
+        server: local
+        container: outline
+
 - Network:
     - Pi-hole:
         href: https://pihole.46n2.site

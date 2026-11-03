@@ -23,8 +23,8 @@
           url: http://navidrome:4533
           user: "{{HOMEPAGE_VAR_NAVIDROME_USER}}"
           # Subsonic auth: token is md5(password + salt), not the password itself
-          token: "{{HOMEPAGE_VAR_NAVIDROME_TOKEN}}"
-          salt: "{{HOMEPAGE_VAR_NAVIDROME_SALT}}"
+          token: "{{HOMEPAGE_FILE_NAVIDROME_TOKEN}}"
+          salt: "{{HOMEPAGE_FILE_NAVIDROME_SALT}}"
 
     - Unmanic:
         href: https://unmanic.46n2.site
@@ -49,7 +49,7 @@
         widget:
           type: overseerr
           url: http://seerr:5055
-          key: "{{HOMEPAGE_VAR_SEERR_KEY}}"
+          key: "{{HOMEPAGE_FILE_SEERR_KEY}}"
 
 - Downloads:
     - SABnzbd:
@@ -61,7 +61,7 @@
         widget:
           type: sabnzbd
           url: http://sabnzbd:8080
-          key: "{{HOMEPAGE_VAR_SABNZBD_KEY}}"
+          key: "{{HOMEPAGE_FILE_SABNZBD_KEY}}"
 
     - qBittorrent:
         href: https://qbit.46n2.site
@@ -73,7 +73,7 @@
           type: qbittorrent
           url: http://gluetun:8080
           username: "{{HOMEPAGE_VAR_QBIT_USER}}"
-          password: "{{HOMEPAGE_VAR_QBIT_PASS}}"
+          password: "{{HOMEPAGE_FILE_QBIT_PASS}}"
 
 - Automation:
     - Sonarr:
@@ -85,7 +85,7 @@
         widget:
           type: sonarr
           url: http://sonarr:8989
-          key: "{{HOMEPAGE_VAR_SONARR_KEY}}"
+          key: "{{HOMEPAGE_FILE_SONARR_KEY}}"
 
     - Radarr:
         href: https://radarr.46n2.site
@@ -96,7 +96,7 @@
         widget:
           type: radarr
           url: http://radarr:7878
-          key: "{{HOMEPAGE_VAR_RADARR_KEY}}"
+          key: "{{HOMEPAGE_FILE_RADARR_KEY}}"
 
     - Lidarr:
         href: https://lidarr.46n2.site
@@ -107,7 +107,7 @@
         widget:
           type: lidarr
           url: http://lidarr:8686
-          key: "{{HOMEPAGE_VAR_LIDARR_KEY}}"
+          key: "{{HOMEPAGE_FILE_LIDARR_KEY}}"
 
     - Prowlarr:
         href: https://prowlarr.46n2.site
@@ -118,7 +118,7 @@
         widget:
           type: prowlarr
           url: http://prowlarr:9696
-          key: "{{HOMEPAGE_VAR_PROWLARR_KEY}}"
+          key: "{{HOMEPAGE_FILE_PROWLARR_KEY}}"
 
 - Documents:
     - Paperless-ngx:
@@ -130,7 +130,7 @@
         widget:
           type: paperlessngx
           url: http://paperless-ngx:8000
-          key: "{{HOMEPAGE_VAR_PAPERLESS_KEY}}"
+          key: "{{HOMEPAGE_FILE_PAPERLESS_KEY}}"
 
     - FileRun:
         href: https://drive.46n2.site
@@ -157,7 +157,7 @@
           type: pihole
           version: 6
           url: http://192.168.1.14:8155
-          key: "{{HOMEPAGE_VAR_PIHOLE_KEY}}"
+          key: "{{HOMEPAGE_FILE_PIHOLE_KEY}}"
 
     - Cloudflare Tunnel:
         href: https://dash.cloudflare.com/
@@ -180,7 +180,7 @@
           type: portainer
           url: http://192.168.1.14:9000
           env: 3
-          key: "{{HOMEPAGE_VAR_PORTAINER_KEY}}"
+          key: "{{HOMEPAGE_FILE_PORTAINER_KEY}}"
 
     - Gluetun:
         icon: gluetun.png

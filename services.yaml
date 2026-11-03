@@ -131,12 +131,12 @@
           url: http://paperless-ngx:8000
           key: "{{HOMEPAGE_VAR_PAPERLESS_KEY}}"
 
-    - OpenCloud:
+    - FileRun:
         href: https://drive.46n2.site
-        icon: open-cloud.png
+        icon: filerun.png
         description: File Sync & Share
         server: local
-        container: opencloud
+        container: filerun
 
     - Outline:
         href: https://outline.46n2.site

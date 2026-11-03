@@ -9,7 +9,7 @@
           type: jellyfin
           version: 2
           url: http://jellyfin:8096
-          key: "{{HOMEPAGE_VAR_JELLYFIN_KEY}}"
+          key: "{{HOMEPAGE_FILE_JELLYFIN_KEY}}"
           enableNowPlaying: true
 
     - Navidrome:
